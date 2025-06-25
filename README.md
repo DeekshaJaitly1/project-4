@@ -1,45 +1,31 @@
 # project-4
-# 🍷 Wine Classification Project
+# 🍷 Wine Classification using Agglomerative Clustering
 
-This repository contains a machine learning project focused on classifying wines based on their chemical properties. The goal is to accurately predict wine types (or quality) using supervised learning algorithms and evaluate model performance using various metrics.
+This project applies **Agglomerative Clustering**, a type of hierarchical clustering algorithm, to group wine samples based on their chemical features. Unlike supervised classification, this is an **unsupervised learning** approach where the algorithm finds natural groupings in the data without pre-defined labels.
 
-## 📊 Problem Statement
+## 💡 Overview
 
-Wine classification is a common problem in the field of machine learning. By analyzing various physicochemical features of wine samples, this project aims to build a model that can classify:
+Agglomerative Clustering is a bottom-up hierarchical clustering technique that merges the closest pairs of data points into clusters, step-by-step, until all points are grouped into a hierarchy. It is particularly useful when we want to explore underlying patterns or categories in the data.
 
-- Red vs White wine  
-**or**  
-- Wine quality score (if using regression or multi-class classification)
+In this project, we use Agglomerative Clustering to identify patterns among different types of wine based on multiple features.
 
-## 🧠 Models Used
+## 🔍 Key Features
 
-This project experiments with multiple classification algorithms, including:
+- Data preprocessing and scaling  
+- Applying Agglomerative Clustering  
+- Dendrogram visualization for hierarchical structure  
+- Visualization of clusters in reduced 2D space (e.g., PCA or t-SNE)  
+- Evaluation using silhouette score and visual validation  
 
-- Logistic Regression  
-- Decision Trees  
-- Random Forest  
-- Support Vector Machines (SVM)  
-- k-Nearest Neighbors (k-NN)  
-- XGBoost (optional)  
+## 🧰 Libraries Used
 
-Hyperparameter tuning and cross-validation are applied to enhance model performance.
+- Python  
+- Scikit-learn  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scipy (for dendrograms)  
 
-## 📁 Dataset
 
-The dataset used is the [UCI Wine Dataset](https://archive.ics.uci.edu/ml/datasets/wine) or [Wine Quality Dataset](https://archive.ics.uci.edu/ml/datasets/Wine+Quality). It contains the following features:
 
-- Fixed acidity  
-- Volatile acidity  
-- Citric acid  
-- Residual sugar  
-- Chlorides  
-- Free sulfur dioxide  
-- Total sulfur dioxide  
-- Density  
-- pH  
-- Sulphates  
-- Alcohol  
-- Output: Wine type or quality score  
 
-## 📌 Project Structure
 
